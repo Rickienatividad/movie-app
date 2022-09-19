@@ -5,13 +5,17 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   #actors
-
+  get "/actors" => "actors#index"
   get "/actors/:id" => "actors#show"
+  post "/actors" => "actors#create"
+  patch "/actors/:id" => "actors#update"
+  delete "/actors/:id" => "actors#destroy"
 
   #movies
 
   get "/movies" => "movies#index"
   get "/movies/:id" => "movies#show"
-
-  get "/movies_collection" => "movies#take_two"
+  post "/movies" => "movies#create"
+  patch "/movies/:id" => "movies#update"
+  delete "/movies/:id" => "movies#destroy"
 end

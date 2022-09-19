@@ -1,0 +1,19 @@
+POST http://localhost:3000/actors.json  
+Content-Type: application/json
+
+{
+  "first_name": "a",
+  "last_name": "badbadf",
+  "known_for": "",
+  "age": 56
+}
+
+### movie update
+PATCH http://localhost:3000/movies/1.json  
+Content-Type: application/json
+
+{
+  "title": "",
+  "plot": "abc",
+  "year": 1955
+}
